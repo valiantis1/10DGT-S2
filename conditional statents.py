@@ -7,7 +7,7 @@
 # Verison: 1.0
 
 # Main loop. Keeps running unitl a condition is met
-Keep_Going = ""
+'''Keep_Going = ""
 while Keep_Going == "":
     # asking the user for an input
     like_coffee = input("Do you like coffee?").lower()
@@ -29,4 +29,4 @@ while Keep_Going == "":
     else:
         print("bruh i said yes or no try again")
         
-    Keep_Going = input("Press <enter> to continue or any key to stop")
+    Keep_Going = input("Press <enter> to continue or any key to stop")'''
