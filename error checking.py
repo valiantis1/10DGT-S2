@@ -45,14 +45,22 @@ def valid_num(question, low, high):
     while True:
         try:
             response = int(input(question))
-            if low < response < high:
+            if low <= response <= high: # if response is between low and high
                 break
             else:
                 print(error)
                 print()
                 
-        except ValueError:
+        except ValueError: #checks if there is a value error
             print(error)
-    return(response)
-num_1 = valid_num("Enter a number between 1 and 15: ", 1, 15,)
+    return(response) #makes the value stored in response available to the main program
+num_1 = valid_num("Enter a number between 1 and 15: ", 1, 15,) #this calls the function and stores the value in num_1
 print(f"You entered {num_1}.")
+num_2 = valid_num("Now a number between 50 and 100: ", 50, 100)
+print(f"You entered {num_2}.")
+num_3 = valid_num("Lastly a number between 70 and 80: ", 70, 80)
+print(f"You entered {num_3}.")
+
+multiply = num_1 * num_2 * num_3
+print(f"The three numbers nmultiplied are equal to {multiply}")
+print(f"The total of {num_1}, {num_2} and {num_3} is {multiply}")
