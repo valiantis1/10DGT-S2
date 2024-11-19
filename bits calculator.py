@@ -65,8 +65,7 @@ while running == "":
     elif (WhatBit == "TEXT" or WhatBit == "T" or WhatBit == "TXT"):
         print("You chose text")
         text = Text()
-        print(f"\nThe bits of the integer is {text}")
-        print(f"\nThe number of bits needed is {len(text)}")
+        print(f"\nThe number of bits needed is {text}")
 
     elif (WhatBit == "IMAGE" or WhatBit == "P" or WhatBit == "IMG"):
         print("You chose image")
